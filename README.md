@@ -111,21 +111,21 @@ chmod +x pi_main.py
 python3 pi_main.py
 ```
 
-The server will start on port 5000. You should see:
+The server will start on port 8888. You should see:
 ```
 INFO - Starting Police Robot Dog Control Server
-INFO - Server will listen on 0.0.0.0:5000
+INFO - Server will listen on 0.0.0.0:8888
 INFO - Found Arduino at: /dev/ttyACM0
 INFO - Arduino connection established successfully
 INFO - Connection monitor started
- * Running on http://0.0.0.0:5000
+ * Running on http://0.0.0.0:8888
 ```
 
 ## API Endpoints
 
 ### 1. Health Check
 ```bash
-GET http://raspberry-pi-ip:5000/health
+GET http://raspberry-pi-ip:8888/health
 ```
 
 **Response:**
@@ -139,7 +139,7 @@ GET http://raspberry-pi-ip:5000/health
 
 ### 2. Send Command
 ```bash
-POST http://raspberry-pi-ip:5000/command
+POST http://raspberry-pi-ip:8888/command
 Content-Type: application/json
 
 {
@@ -166,7 +166,7 @@ Content-Type: application/json
 
 ### 3. Get Status
 ```bash
-GET http://raspberry-pi-ip:5000/status
+GET http://raspberry-pi-ip:8080/status
 ```
 
 **Response:**
@@ -192,7 +192,7 @@ GET http://raspberry-pi-ip:5000/status
 3. Check logs for "Arduino connection established"
 4. Use curl to test:
    ```bash
-   curl -X POST http://localhost:5000/command \
+   curl -X POST http://localhost:8888/command \
      -H "Content-Type: application/json" \
      -d '{"command": "FORWARD", "token": "robot_dog_secure_token_2024"}'
    ```
@@ -204,7 +204,7 @@ GET http://raspberry-pi-ip:5000/status
    ```
 2. From another device on the same network:
    ```bash
-   curl -X POST http://192.168.1.100:5000/command \
+   curl -X POST http://192.168.1.100:8888/command \
      -H "Content-Type: application/json" \
      -d '{"command": "FORWARD", "token": "robot_dog_secure_token_2024"}'
    ```
@@ -230,7 +230,7 @@ GET http://raspberry-pi-ip:5000/status
 
 ### Connection Timeout
 - Check Wi-Fi connection on Raspberry Pi
-- Verify firewall allows port 5000: `sudo ufw allow 5000`
+- Verify firewall allows port 8888: `sudo ufw allow 8888`
 - Check server logs for errors
 
 ### Commands Not Working
@@ -269,4 +269,6 @@ Robo/
 ## License
 
 This project is for educational and law enforcement use.
+
+
 

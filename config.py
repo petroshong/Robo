@@ -19,7 +19,7 @@ AUTH_TOKEN = "robot_dog_secure_token_2024"  # Change this to a secure random str
 
 # Server Configuration
 SERVER_HOST = "0.0.0.0"  # Listen on all interfaces
-SERVER_PORT = 5000  # HTTP server port
+SERVER_PORT = 8888  # HTTP server port (changed to avoid conflicts with other services)
 COMMAND_TIMEOUT = 2.0  # Seconds before robot stops if no command received
 
 # Webcam Configuration

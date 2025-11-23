@@ -114,3 +114,5 @@ When you connect your Arduino:
 - Works on Mac, Windows, Linux (with Python + tkinter)
 - The **Pi server** (`pi_main.py`) is optional - only if you want remote control later
 
+
+

@@ -1,0 +1,150 @@
+2025-11-22 15:15:26,968 - __main__ - INFO - Starting Police Robot Dog Control Server
+2025-11-22 15:15:26,968 - __main__ - INFO - Server will listen on 0.0.0.0:5000
+2025-11-22 15:15:26,969 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:15:26,969 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:15:26,969 - __main__ - ERROR - Failed to connect to Arduino. Server will start but commands will fail.
+2025-11-22 15:15:26,970 - __main__ - ERROR - Check Arduino connection and port configuration in config.py
+2025-11-22 15:15:26,970 - __main__ - INFO - Connection monitor started
+2025-11-22 15:15:31,990 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.104.208.105:5000
+2025-11-22 15:15:31,990 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-22 15:19:00,981 - __main__ - INFO - Starting Police Robot Dog Control Server
+2025-11-22 15:19:00,981 - __main__ - INFO - Server will listen on 0.0.0.0:5000
+2025-11-22 15:19:00,982 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:19:00,982 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:19:00,982 - __main__ - ERROR - Failed to connect to Arduino. Server will start but commands will fail.
+2025-11-22 15:19:00,982 - __main__ - ERROR - Check Arduino connection and port configuration in config.py
+2025-11-22 15:19:00,982 - __main__ - INFO - Connection monitor started
+2025-11-22 15:19:00,986 - __main__ - INFO - Server stopped
+2025-11-22 15:21:04,912 - __main__ - INFO - Starting Police Robot Dog Control Server
+2025-11-22 15:21:04,912 - __main__ - INFO - Server will listen on 0.0.0.0:8080
+2025-11-22 15:21:04,913 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:21:04,913 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:21:04,913 - __main__ - WARNING - Arduino not connected. Server will start but commands will fail until Arduino is connected.
+2025-11-22 15:21:04,913 - __main__ - INFO - You can connect Arduino later and commands will work automatically.
+2025-11-22 15:21:04,913 - __main__ - INFO - Connection monitor started
+2025-11-22 15:21:09,929 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.104.208.105:8080
+2025-11-22 15:21:09,930 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-22 15:21:27,606 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:21:27] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-22 15:21:27,886 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:21:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-22 15:21:48,593 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:21:48] "[33mGET / HTTP/1.1[0m" 404 -
+2025-11-22 15:22:44,811 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:22:44] "GET /health HTTP/1.1" 200 -
+2025-11-22 15:22:45,662 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:22:45,662 - __main__ - ERROR - Command failed: FORWARD - Arduino not connected
+2025-11-22 15:22:45,662 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:22:45] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:22:47,977 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:22:47,977 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:22:47,977 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:22:47] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:22:53,141 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:22:53,142 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:22:53,142 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:22:53] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:22:56,527 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:22:56,527 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:22:56,528 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:22:56] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:23:01,321 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:23:01,322 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:23:01,322 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:23:01] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:25:21,921 - __main__ - INFO - Starting Police Robot Dog Control Server
+2025-11-22 15:25:21,921 - __main__ - INFO - Server will listen on 0.0.0.0:8080
+2025-11-22 15:25:21,923 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:25:21,923 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:25:21,923 - __main__ - WARNING - Arduino not connected. Server will start but commands will fail until Arduino is connected.
+2025-11-22 15:25:21,923 - __main__ - INFO - You can connect Arduino later and commands will work automatically.
+2025-11-22 15:25:21,923 - __main__ - INFO - Connection monitor started
+2025-11-22 15:25:21,926 - __main__ - INFO - Server stopped
+2025-11-22 15:25:49,678 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:25:49] "GET /health HTTP/1.1" 200 -
+2025-11-22 15:25:49,939 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:25:49,939 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:25:49,939 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:25:49] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:25:52,302 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:25:52,302 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:25:52,302 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:25:52] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:26:49,559 - __main__ - INFO - Starting Police Robot Dog Control Server
+2025-11-22 15:26:49,559 - __main__ - INFO - Server will listen on 0.0.0.0:3000
+2025-11-22 15:26:49,560 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:26:49,560 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:26:49,560 - __main__ - WARNING - Arduino not connected. Server will start but commands will fail until Arduino is connected.
+2025-11-22 15:26:49,560 - __main__ - INFO - You can connect Arduino later and commands will work automatically.
+2025-11-22 15:26:49,560 - __main__ - INFO - Connection monitor started
+2025-11-22 15:26:54,570 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.104.208.105:3000
+2025-11-22 15:26:54,571 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-22 15:27:11,294 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:27:11] "GET /health HTTP/1.1" 200 -
+2025-11-22 15:27:12,170 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:27:12,170 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:27:12,170 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:27:12] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:27:12,903 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:27:12] "GET /health HTTP/1.1" 200 -
+2025-11-22 15:27:13,281 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:27:13,281 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:27:13,281 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:27:13] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:27:16,538 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:27:16,539 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:27:16,539 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:27:16] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:27:19,948 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:27:19,949 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:27:19,949 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:27:19] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:27:23,135 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:27:23,136 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:27:23,136 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:27:23] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:27:25,220 - __main__ - ERROR - Arduino not connected
+2025-11-22 15:27:25,220 - __main__ - ERROR - Command failed: STOP - Arduino not connected
+2025-11-22 15:27:25,220 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:27:25] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:28:06,926 - __main__ - INFO - Starting Police Robot Dog Control Server
+2025-11-22 15:28:06,926 - __main__ - INFO - Server will listen on 0.0.0.0:3000
+2025-11-22 15:28:06,928 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:28:06,928 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:28:06,928 - __main__ - WARNING - Arduino not connected. Server will start but commands will fail until Arduino is connected.
+2025-11-22 15:28:06,928 - __main__ - INFO - You can connect Arduino later and commands will work automatically.
+2025-11-22 15:28:06,928 - __main__ - INFO - Connection monitor started
+2025-11-22 15:28:11,942 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.104.208.105:3000
+2025-11-22 15:28:11,942 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-22 15:29:12,874 - __main__ - INFO - Server stopped
+2025-11-22 15:29:15,573 - __main__ - INFO - Starting Police Robot Dog Control Server
+2025-11-22 15:29:15,573 - __main__ - INFO - Server will listen on 0.0.0.0:3000
+2025-11-22 15:29:15,574 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:29:15,574 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:29:15,574 - __main__ - WARNING - Arduino not connected. Server will start but commands will fail until Arduino is connected.
+2025-11-22 15:29:15,574 - __main__ - INFO - You can connect Arduino later and commands will work automatically.
+2025-11-22 15:29:15,574 - __main__ - INFO - Connection monitor started
+2025-11-22 15:29:20,587 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://10.104.208.105:3000
+2025-11-22 15:29:20,588 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-22 15:30:07,250 - __main__ - INFO - Starting Police Robot Dog Control Server
+2025-11-22 15:30:07,250 - __main__ - INFO - Server will listen on 0.0.0.0:3000
+2025-11-22 15:30:07,251 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:30:07,251 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:30:07,251 - __main__ - WARNING - Arduino not connected. Server will start but commands will fail until Arduino is connected.
+2025-11-22 15:30:07,251 - __main__ - INFO - You can connect Arduino later and commands will work automatically.
+2025-11-22 15:30:07,251 - __main__ - INFO - Connection monitor started
+2025-11-22 15:30:07,255 - __main__ - INFO - Server stopped
+2025-11-22 15:30:25,742 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:30:25] "GET /health HTTP/1.1" 200 -
+2025-11-22 15:30:34,889 - __main__ - INFO - Arduino not connected, attempting to reconnect...
+2025-11-22 15:30:34,891 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:30:34,891 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:30:34,891 - __main__ - ERROR - Arduino not connected - please check USB connection
+2025-11-22 15:30:34,891 - __main__ - ERROR - Command failed: FORWARD - Arduino not connected. Please check USB connection and try again.
+2025-11-22 15:30:34,891 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:30:34] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:30:37,116 - __main__ - INFO - Arduino not connected, attempting to reconnect...
+2025-11-22 15:30:37,117 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:30:37,117 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:30:37,117 - __main__ - ERROR - Arduino not connected - please check USB connection
+2025-11-22 15:30:37,117 - __main__ - ERROR - Command failed: STOP - Arduino not connected. Please check USB connection and try again.
+2025-11-22 15:30:37,117 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:30:37] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
+2025-11-22 15:30:40,805 - __main__ - INFO - Arduino not connected, attempting to reconnect...
+2025-11-22 15:30:40,806 - __main__ - WARNING - Arduino not found. Available ports: ['/dev/cu.wlan-debug', '/dev/cu.debug-console', '/dev/cu.Bluetooth-Incoming-Port']
+2025-11-22 15:30:40,806 - __main__ - ERROR - Could not find Arduino port. Check connections.
+2025-11-22 15:30:40,806 - __main__ - ERROR - Arduino not connected - please check USB connection
+2025-11-22 15:30:40,806 - __main__ - ERROR - Command failed: STOP - Arduino not connected. Please check USB connection and try again.
+2025-11-22 15:30:40,806 - werkzeug - INFO - 10.104.208.105 - - [22/Nov/2025 15:30:40] "[35m[1mPOST /command HTTP/1.1[0m" 500 -
