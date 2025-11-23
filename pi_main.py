@@ -254,6 +254,186 @@ def handle_command():
         return jsonify({"status": "error", "message": str(e)}), 500
 
 
+@app.route('/forward', methods=['POST'])
+def handle_forward():
+    """Move robot forward."""
+    global last_command_time
+    
+    try:
+        data = request.get_json() or {}
+        
+        # Check authentication token
+        token = data.get('token', '')
+        if token != config.AUTH_TOKEN:
+            logger.warning(f"Invalid token attempt from {request.remote_addr}")
+            return jsonify({"status": "error", "message": "Invalid authentication token"}), 401
+        
+        # Send FORWARD command to Arduino
+        result = send_command_to_arduino("FORWARD")
+        
+        if result["status"] == "success":
+            logger.info("Command executed: FORWARD")
+            return jsonify({
+                "status": "success",
+                "command": "FORWARD",
+                "arduino_response": result.get("response", "")
+            }), 200
+        else:
+            logger.error(f"Command failed: FORWARD - {result.get('message', '')}")
+            return jsonify({
+                "status": "error",
+                "message": result.get("message", "Command execution failed")
+            }), 500
+            
+    except Exception as e:
+        logger.error(f"Error handling forward command: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/backward', methods=['POST'])
+def handle_backward():
+    """Move robot backward."""
+    global last_command_time
+    
+    try:
+        data = request.get_json() or {}
+        
+        # Check authentication token
+        token = data.get('token', '')
+        if token != config.AUTH_TOKEN:
+            logger.warning(f"Invalid token attempt from {request.remote_addr}")
+            return jsonify({"status": "error", "message": "Invalid authentication token"}), 401
+        
+        # Send BACKWARD command to Arduino
+        result = send_command_to_arduino("BACKWARD")
+        
+        if result["status"] == "success":
+            logger.info("Command executed: BACKWARD")
+            return jsonify({
+                "status": "success",
+                "command": "BACKWARD",
+                "arduino_response": result.get("response", "")
+            }), 200
+        else:
+            logger.error(f"Command failed: BACKWARD - {result.get('message', '')}")
+            return jsonify({
+                "status": "error",
+                "message": result.get("message", "Command execution failed")
+            }), 500
+            
+    except Exception as e:
+        logger.error(f"Error handling backward command: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/left', methods=['POST'])
+def handle_left():
+    """Turn robot left."""
+    global last_command_time
+    
+    try:
+        data = request.get_json() or {}
+        
+        # Check authentication token
+        token = data.get('token', '')
+        if token != config.AUTH_TOKEN:
+            logger.warning(f"Invalid token attempt from {request.remote_addr}")
+            return jsonify({"status": "error", "message": "Invalid authentication token"}), 401
+        
+        # Send LEFT command to Arduino
+        result = send_command_to_arduino("LEFT")
+        
+        if result["status"] == "success":
+            logger.info("Command executed: LEFT")
+            return jsonify({
+                "status": "success",
+                "command": "LEFT",
+                "arduino_response": result.get("response", "")
+            }), 200
+        else:
+            logger.error(f"Command failed: LEFT - {result.get('message', '')}")
+            return jsonify({
+                "status": "error",
+                "message": result.get("message", "Command execution failed")
+            }), 500
+            
+    except Exception as e:
+        logger.error(f"Error handling left command: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/right', methods=['POST'])
+def handle_right():
+    """Turn robot right."""
+    global last_command_time
+    
+    try:
+        data = request.get_json() or {}
+        
+        # Check authentication token
+        token = data.get('token', '')
+        if token != config.AUTH_TOKEN:
+            logger.warning(f"Invalid token attempt from {request.remote_addr}")
+            return jsonify({"status": "error", "message": "Invalid authentication token"}), 401
+        
+        # Send RIGHT command to Arduino
+        result = send_command_to_arduino("RIGHT")
+        
+        if result["status"] == "success":
+            logger.info("Command executed: RIGHT")
+            return jsonify({
+                "status": "success",
+                "command": "RIGHT",
+                "arduino_response": result.get("response", "")
+            }), 200
+        else:
+            logger.error(f"Command failed: RIGHT - {result.get('message', '')}")
+            return jsonify({
+                "status": "error",
+                "message": result.get("message", "Command execution failed")
+            }), 500
+            
+    except Exception as e:
+        logger.error(f"Error handling right command: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/stop', methods=['POST'])
+def handle_stop():
+    """Stop robot."""
+    global last_command_time
+    
+    try:
+        data = request.get_json() or {}
+        
+        # Check authentication token
+        token = data.get('token', '')
+        if token != config.AUTH_TOKEN:
+            logger.warning(f"Invalid token attempt from {request.remote_addr}")
+            return jsonify({"status": "error", "message": "Invalid authentication token"}), 401
+        
+        # Send STOP command to Arduino
+        result = send_command_to_arduino("STOP")
+        
+        if result["status"] == "success":
+            logger.info("Command executed: STOP")
+            return jsonify({
+                "status": "success",
+                "command": "STOP",
+                "arduino_response": result.get("response", "")
+            }), 200
+        else:
+            logger.error(f"Command failed: STOP - {result.get('message', '')}")
+            return jsonify({
+                "status": "error",
+                "message": result.get("message", "Command execution failed")
+            }), 500
+            
+    except Exception as e:
+        logger.error(f"Error handling stop command: {e}")
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
 @app.route('/status', methods=['GET'])
 def get_status():
     """Get current robot status."""
